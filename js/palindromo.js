@@ -18,8 +18,10 @@ function comprobarPalindromo(text) {
     // Comprobar si se escriben igual
     if (normalText === revesText) {
         alert("Es un palindromo")
+        console.log("Es un palindromo")
     } else {
         alert("No es un palindromo")
+        console.log("No es un palindromo")
     }
 }
 

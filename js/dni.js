@@ -11,8 +11,10 @@ let letraCalculada;
 function comprobarLetra(letraCalculada) {
     // Comprobar la letra calculada con la letra proporcionada
     if (letraDniIntroducida === letraCalculada) {
+        alert("Numero y letra del DNI son correctos");
         console.log("Numero y letra del DNI son correctos");
     } else {
+        alert("Numero y letra del DNI son correctos");
         console.log("Letra del DNI es incorrecta");
     }
 }
