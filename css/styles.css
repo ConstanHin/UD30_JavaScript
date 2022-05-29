@@ -1,0 +1,366 @@
+:root {
+    --primary-light: #D8CBC7;
+    --primary-light-2: #FCD4C5;
+    --secondary-dark: #33673B;
+    --secondary-light: #E4F2E6;
+    --secondary-dark-2: #575255;
+
+}
+
+
+body {
+    background-color: var(--primary-light);
+    color: #2e333f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: hsl(14, 20%, 95%);
+    min-height: 800px;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px #3333;
+}
+
+h1 {
+    margin: 0;
+    border-bottom: 4px solid var(--primary-light);
+    color: var(--secondary-dark-2);
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+h2 {
+    color: var(--secondary-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+.blue-text {
+    color: #749aba;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.list1>li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+.link {
+    display: block;
+    border: 1px solid #3333;
+    background-color: azure;
+    height: 30px;
+    line-height: 30px;
+    padding: 0.3rem;
+    box-shadow: 1px 1px 5px #3333;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 250px;
+    text-align: center;
+    color: #2e333f;
+}
+
+table,
+th,
+td {
+    margin: auto;
+    border: 4px solid var(--secondary-dark);
+    border-collapse: collapse;
+    padding: 0.3rem 0.5rem;
+    background-color: #F2F6F7;
+    color: var(--secondary-dark-2)
+}
+
+th {
+    background-color: #3e7c4b;
+    color: white;
+}
+
+table.first tr:nth-child(odd)>td {
+    background-color: var(--secondary-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.green-background {
+    background-color: var(--secondary-light);
+}
+
+#table-three {
+    width: 100%;
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.bg-green {
+    background-color: palegreen;
+    color: black;
+}
+
+.bg-cyan {
+    background-color: cyan;
+}
+
+.bg-magenta {
+    background-color: magenta;
+}
+
+.align-bottom {
+    vertical-align: bottom;
+}
+
+.align-right {
+    text-align: end;
+}
+
+.align-left {
+    text-align: start;
+}
+
+/* Ejercicio 14 */
+
+#container-comp-img-table {
+    position: relative;
+    max-width: 100%;
+    height: 700px;
+}
+
+#container-comp-img-table img {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    filter: opacity(0.5);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container-comp-img-table table {
+    position: relative;
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Tabla ejercicio 16 */
+#tabla-16 {
+    border-style: groove;
+    border-collapse: separate;
+}
+
+#tabla-16 td {
+    background-color: #ffffcc;
+    color: brown;
+    text-align: center;
+}
+
+#tabla-16 th {
+    background-color: #669966;
+    color: rgb(105, 27, 27);
+    font-weight: 100;
+}
+
+#tabla-16 .bg-color1 {
+    background-color: #ffcc99;
+}
+
+#tabla-16 .bg-color2 {
+    background-color: #fdfd98;
+}
+
+#tabla-16,
+th,
+td {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: initial;
+    padding: 0.3rem 0.5rem;
+}
+
+/* Ejercicio 17 */
+
+#background-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-image: url(../images/ac.jpg);
+}
+
+.square {
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 1.5rem;
+}
+
+.square span {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+#sq-1 {
+    background-image: url(../images/back_mantel.jpg);
+}
+
+#sq-2>div {
+    background-image: url(../images/back_mantel.jpg);
+    height: 70%;
+    width: 70%;
+    margin: 15%;
+}
+
+#sq-3 {
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sq-4,
+#sq-6,
+#sq-7,
+#sq-8 {
+    background-color: #f6f3ee;
+}
+
+#sq-4>div,
+#sq-6>div {
+    background-image: url(../images/back_mantel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    width: 70%;
+    margin: 15%;
+}
+
+#sq-5 {
+    background-image: url(../images/dh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sq-6>div {
+    background-image: url(../images/dh.jpg);
+}
+
+#sq-7>div,
+#sq-8>div {
+    background-image: url(../images/dh_2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#sq-8>div {
+    background-image: url(../images/dh_3.jpg);
+}
+
+#sq-9 {
+    background: linear-gradient(90deg, rgba(212, 254, 84, 1) 0%, rgba(93, 108, 79, 1) 100%);
+}
+
+#sq-10 {
+    background: linear-gradient(180deg, rgba(234, 179, 160, 1) 0%, rgba(121, 36, 1, 1) 71%, rgba(178, 98, 69, 1) 100%);
+}
+
+#sq-11 {
+    background: linear-gradient(180deg, rgba(241, 245, 220, 1) 0%, rgba(65, 119, 53, 1) 100%);
+}
+
+#sq-12 {
+    background: linear-gradient(180deg, rgba(64, 118, 55, 0) 0%, rgba(64, 118, 55, 1) 100%);
+}
+
+/* Ejercicio 18*/
+/* top image */
+.container-18-top {
+    position: relative;
+    width: 240px;
+    height: 115px;
+    background-color: #a4d3ff;
+    border: 2px solid blue;
+}
+
+.floor {
+	height: 14px;
+	width: 100%;
+	background-image: url(../images/f01.png);
+	position: absolute;
+	bottom: 0;
+}
+.mario {
+	width: 239px;
+    height: 113px;
+	background-image: url(../images/f02.png);
+	position: absolute;
+	bottom: 0;
+}
+.clouds {
+	width: 100%;
+    height: 73px;
+	background-image: url(../images/f03.png);
+	position: absolute;
+	top: 0;
+}
+
+/* middle image */
+#container-18-middle {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #a4d3ff;
+    border: 5px solid red;
+    margin: 1rem;
+}
+
+/* Ejercicio 19 */
+/* Sobreescribir las reglas de las tablas anteriores */
+#tabla-19, #tabla-19 th, #tabla-19 td,
+#tabla-20, #tabla-20 th, #tabla-20 td {
+    margin: 0;
+    border: 1px solid black;
+    border-collapse: initial;
+    text-align: initial;
+    color: black;
+    background-color: white;
+    padding: 0;
+    font-family: serif;
+}
+
+#tabla-19 th,
+#tabla-20 th{
+    text-align: center;
+}
+
+caption {
+    caption-side:bottom;
+    text-align: start;
+    margin: 1rem 0;
+}
+
+#tabla-19 tr:nth-child(2){
+    font-weight: bold;
+}
